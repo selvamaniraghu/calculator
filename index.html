@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Main-container">
+        <div class="Sub-container">
+            <div class="input-tab">
+                <input type="text" placeholder="0" id="input-num">
+            </div>
+            <div class="brand" id="smart">
+                <h3><i>Sm@rt</i></h3>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn" onclick="cal(7)" onmouseenter="brandcolor()">7</button>
+                    <button class="btn" onclick="cal(8)" onmouseenter="brandcolor()">8</button>
+                    <button class="btn" onclick="cal(9)" onmouseenter="brandcolor()">9</button>
+                    <button class="btn" onclick="del()" onmouseenter="brandcolor()">DEL</button>
+                    <button class="btn" onclick="clr()" onmouseenter="brandcolor()">AC</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="cal(4)" onmouseenter="brandcolor()">4</button>
+                    <button class="btn" onclick="cal(5)" onmouseenter="brandcolor()">5</button>
+                    <button class="btn" onclick="cal(6)" onmouseenter="brandcolor()">6</button>
+                    <button class="btn" onclick="cal('*')" onmouseenter="brandcolor()">*</button>
+                    <button class="btn" onclick="cal('/')" onmouseenter="brandcolor()">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="cal(1)" onmouseenter="brandcolor()">1</button>
+                    <button class="btn" onclick="cal(2)" onmouseenter="brandcolor()">2</button>
+                    <button class="btn" onclick="cal(3)" onmouseenter="brandcolor()">3</button>
+                    <button class="btn" onclick="cal('+')" onmouseenter="brandcolor()">+</button>
+                    <button class="btn" onclick="cal('-')" onmouseenter="brandcolor()">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="cal(0)" onmouseenter="brandcolor()">0</button>
+                    <button class="btn" onclick="cal('.')" onmouseenter="brandcolor()">.</button>
+                    <button class="btn" onclick="exp()" onmouseenter="brandcolor()">EXP</button>
+                    <button class="btn" onclick="ans()" onmouseenter="brandcolor()">ANS</button>
+                    <button class="btn" onclick="solve()" onmouseenter="brandcolor()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
